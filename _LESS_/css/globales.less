@@ -6,10 +6,6 @@
 @Fuente2: 'Oswald', sans-serif;
 @fuente-base: 18px;
 
-*{
-	box-sizing: border-box;
-}
-
 .sombra-caja {
 	box-shadow: 0px 5px 15px 0px fade(@color-primario, 50%); 
 }
@@ -25,10 +21,15 @@
 	line-height: @font-size + 10%;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: @Fuente1;
-	color: @color-primario;
+	color: @color-claro;
+	background-color: @color-primario;
 	.fuente(@fuente-base);
 }
 
